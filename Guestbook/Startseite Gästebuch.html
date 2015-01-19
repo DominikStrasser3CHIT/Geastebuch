@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <!-- Wichtige Meta-Daten werden gesetzt -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Sprung</title>
+
+    <!-- Bootstrap CSS einbinden-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	
+	<!-- Erstellung und Modifizierung neuer CSS Klassen -->
+ 	<style type="text/css">
+	.col-md-4 { 
+		width:50%;
+		height:50%;
+	}
+	.buttonn {
+		height: 750px;
+	}
+	.col-sm-6 { height:220px;}
+	.wegvomrand {
+		padding-left: 20%;
+		padding-right: 20%;
+	}
+	<!-- Prozentangaben sind hier in diesem Fall besser als Pixelangaben da
+		 bei einem fixen Pixelpadding die Elemente "blöd ausschauen" wenn das Browserfenster verkleinert wird -->
+	.standartpad {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	</style>   
+  </head>
+  <body>
+		<!-- Body Anfang -->
+		<div align="center"><h1>G&auml;stebuch</h1></div><br><br><br><br>
+	
+			<div class="col-md-4"><a href="jqueryueb.html" height="100px" class="btn btn-primary btn-lg btn-block buttonn active" role="button"><h1>G&auml;ste auslesen</h1></a></div>
+			<div class="col-md-4"><a href="Gast_speichern.php" class="btn btn-success btn-lg btn-block buttonn active" role="button"><h1>Neuen Gast speichern</h1></a></div>
+		<!-- Body Ende -->
+    
+    <!-- jQuery (notwendig für Bootstrap's JavaScript Plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Alle Plugins als verkleinerte Version laden -->
+    <script src="js/bootstrap.min.js"></script>
+	<!--Einbinden der Ajax/XML (Javascript) Datei welche mir die Elemente zuweist -->
+	<script src="mein_JQueryXML_Code.js"></script> 
+    
+    <footer>
+    	<!--<a href="http://www.catmoney.de/bootstrap-tutorial/" target="_blank">&copy; Bootstrap Tutorial von Catmoney.de</a>-->
+    </footer>
+  </body>
+</html>
