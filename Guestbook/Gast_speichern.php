@@ -4,7 +4,7 @@
 			<a href="Startseite Gästebuch.html">Zur&uuml;ck zum Gaestebuch</a>
 		</td>
 	</tr>
-    <tr>
+</table>
 <?php
 
 // 1.) Variablen initialisieren
@@ -109,5 +109,11 @@ if (!$link) {
 			</table>
 			<input type="submit" name="speichern" value="Film speichern">
 		</form>
+		<!-- jQuery (notwendig für Bootstrap's JavaScript Plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Alle Plugins als verkleinerte Version laden -->
+    <script src="js/bootstrap.min.js"></script>
+	<!--Einbinden der Ajax/XML (Javascript) Datei welche mir die Elemente zuweist -->
+	<script src="mein_JQueryXML_Code.js"></script> 
     </body>
 </html>
