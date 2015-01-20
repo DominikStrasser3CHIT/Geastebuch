@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+
+<!--
+-
+- Sequel Pro XML dump
+- Version 4135
+-
+- http://www.sequelpro.com/
+- http://code.google.com/p/sequel-pro/
+-
+- Host: localhost (MySQL 5.5.38)
+- Database: gaestebuch
+- Generation Time Time: 2015-01-20 09:52:38 +0000
+-
+-->
+
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="gaestebuch">
+
+	<table_structure name="eintrag">
+		<field field="id" type="int(11) unsigned" null="NO" key="PRI" default="<null>" extra="auto_increment" />
+		<field field="name" type="varchar(50)" null="NO" key="" default="" extra="" />
+		<field field="datum" type="date" null="YES" key="" default="<null>" extra="" />
+		<field field="ueberschrift" type="varchar(40)" null="NO" key="" default="" extra="" />
+		<field field="text" type="varchar(125)" null="NO" key="" default="" extra="" />
+
+		<options name="eintrag" engine="InnoDB" version="10" row_format="Compact" rows="2" avg_row_length="8192" data_length="16384" max_data_length="0" index_length="0" data_free="9437184" create_time="2015-01-20 08:47:42" update_time="<null>" collation="utf8_general_ci" create_options="" comment="" />
+	</table_structure>
+
+	<table_data name="eintrag">
+
+	<row>
+		<field name="id">1</field>
+		<field name="name">Max Mustermann</field>
+		<field name="datum">2015-01-20</field>
+		<field name="ueberschrift">Ueberschrift</field>
+		<field name="text">Text</field>
+	</row>
+
+	<row>
+		<field name="id">3</field>
+		<field name="name">Lukas Mustermann</field>
+		<field name="datum">2015-01-13</field>
+		<field name="ueberschrift">Ueberschrift</field>
+		<field name="text">Text</field>
+	</row>
+
+	</table_data>
+
+</database>
+</mysqldump>
