@@ -2,7 +2,7 @@
 
 
     
-    mysql_connect("localhost", "root", "Dstrasser1996", "gaestebuch");
+    mysql_connect("localhost", "root", "root", "gaestebuch");
     mysql_select_db("gaestebuch");      
     
     $res = mysql_query("SELECT * FROM eintrag");

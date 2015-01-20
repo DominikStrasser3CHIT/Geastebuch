@@ -1,6 +1,6 @@
 <?php
 
-$link = mysqli_connect('localhost', 'root', 'Dstrasser1996', 'gaestebuch');
+$link = mysqli_connect('localhost', 'root', 'root', 'gaestebuch');
 
 $query = 'SELECT id FROM eintrag';
 
