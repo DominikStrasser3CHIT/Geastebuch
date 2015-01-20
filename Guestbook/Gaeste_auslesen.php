@@ -70,25 +70,15 @@ if (!$link) {
 				<td>
 					<b><h2>Datum</h2></b>
 				</td>
+				<h1><p></p></h1>
 			</tr>
 			<?php if ($tab != '') echo $tab; ?>
 		</table>
-	<script type="text/javascript">
-		$.ajax({
-			url: 'data.json',
-			dataType: 'json',
-			success: test
-		});
-		
-		function test(data){	
-				alert(data.name);
-			}
-	</script>
 		<!-- jQuery (notwendig für Bootstrap's JavaScript Plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- Alle Plugins als verkleinerte Version laden -->
     <script src="js/bootstrap.min.js"></script>
 	<!--Einbinden der Ajax/XML (Javascript) Datei welche mir die Elemente zuweist -->
-	<script src="mein_JQueryXML_Code.js"></script> 
+	<script src="Datenbank_aus_JSON.js"></script> 
 	</body>
 </html>
