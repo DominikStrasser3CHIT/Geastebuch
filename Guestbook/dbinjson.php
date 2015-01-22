@@ -1,7 +1,13 @@
 <?php 
 
 
+	$entry = new Eintrag();
+	$entry->setName("BlaBLubb");
+	$entry->save();
     
+	$entryQuery = new EintragQuery();
+	
+	
     mysql_connect("localhost", "root", "0000", "gaestebuch");
     mysql_select_db("gaestebuch");      
     
@@ -12,6 +18,5 @@
     }
     file_put_contents("data.json", json_encode($records));
     echo "JSON File im Ordner erstellt!";
-
 
 ?> 
